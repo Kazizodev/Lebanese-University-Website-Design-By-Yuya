@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero {
+    background-image: url("./assets/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background: linear-gradient(
+            270deg,
+            rgba(0, 0, 0, 0.7) 19.79%,
+            rgba(0, 0, 0, 0) 57.29%,
+            rgba(0, 0, 0, 0.7) 95.31%
+        );
+    }
+}
+
+.register {
+    background-image: url("./assets/register.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background: linear-gradient(
+            270deg,
+            rgba(0, 0, 0, 0.7) 19.79%,
+            rgba(0, 0, 0, 0) 57.29%,
+            rgba(0, 0, 0, 0.7) 95.31%
+        );
+    }
+}
